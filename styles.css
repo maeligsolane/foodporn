@@ -1,0 +1,249 @@
+@font-face{
+    font-family: 'Uni Sans Heavy Italic.otf';
+    src:url('UniSansHeavyCAPS/Uni Sans Heavy Italic.otf') format('truetype');
+}
+h1{
+    font-family: 'UniSansHeavyCAPS/Uni Sans Heavy Italic.otf',sans-serif;
+}
+/*nav bar*/
+.nav {
+    display:flex;
+    position:fixed;
+    }
+.fixed-nav{
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 1;
+}
+.banner {
+    width: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.navbar-start {
+    display:flex;
+    justify-content: flex-end;
+    width: 100%;
+    }
+/*baner*/
+.background {
+    background-image: url(burger1.jpg);
+    background-size:cover;
+    width: 100%;
+    height: 900px;
+    margin: 0;
+    padding: 200px;
+}
+.box_banner {
+    width: 40%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    padding: 100px 50px;
+}
+.box-banner-content {
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  margin: auto;
+}
+h1 {
+    font-size: 50px;
+    font-weight: 400;
+    }
+
+    .bannercontent{
+        margin-bottom:10px;
+    }
+
+/*présentation burger*/
+.ensemble_card {
+    display: flex;
+    width: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .ensemble_card {
+        display:block;
+    }
+    .ensemble ensemble_card {
+        Width:90%;    
+        Margin:auto;
+
+    }
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  display: flex;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 15em;
+  height: 25em;
+  display: flex;
+  justify-content: space-around;
+  margin: 40px;
+  text-align: center;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+/*présentation chef*/
+
+.ensemble_chef {
+    display: flex;
+    width: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+ }   
+
+ .ensemble_chef {
+    background-image: url('back.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+ .chef {
+    width: 40%;
+    height: 100%;
+    margin-left: 20px;
+ } 
+
+ .paragraphe_chef{
+    background-color: #ffff;
+    padding-top: 15px;
+    box-shadow: 10px 10px 5px gray;
+ }
+
+
+.text_chef {
+  margin: auto;
+  width: 50%;
+  height: 350;
+}
+    .text_chef{
+        margin-bottom:10px;
+    }
+
+/*gridd photo*/
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+.post-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 293px));
+  justify-content: center;
+  grid-gap: 28px;
+}
+.post {
+  cursor: pointer;
+  position: relative;
+  display: block;
+}
+.post-image {
+  margin: 0;
+}
+.post-image img {
+  width: 100%;
+  vertical-align: top;
+}
+.post-overlay {
+  background: rgba(0,0,0, .4);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+.post:hover .post-overlay{
+            display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .post-list {
+    grid-gap: 3px;
+  }
+}
+
+/*footer*/
+
+.footer{
+background:#000;
+padding:30px 0px;
+font-family: 'Play', sans-serif;
+text-align:center;
+}
+
+.footer .row{
+width:100%;
+margin:1% 0%;
+padding:0.6% 0%;
+color:gray;
+font-size:0.8em;
+}
+
+.footer .row a{
+text-decoration:none;
+color:gray;
+transition:0.5s;
+}
+
+.footer .row a:hover{
+color:#fff;
+}
+
+.footer .row ul{
+width:100%;
+}
+
+.footer .row ul li{
+display:inline-block;
+margin:0px 30px;
+}
+
+.footer .row a i{
+font-size:2em;
+margin:0% 1%;
+}
+
+@media (max-width:720px){
+.footer{
+text-align:center;
+padding:5%;
+}
+.footer .row ul li{
+display:block;
+margin:10px 0px;
+text-align:center;
+}
+.footer .row a i{
+margin:0% 3%;
+}
+}
+
